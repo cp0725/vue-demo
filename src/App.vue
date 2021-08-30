@@ -1,28 +1,39 @@
+<!--
+ * @Author: 常培
+ * @Date: 2021-06-13 18:32:42
+ * @LastEditors: 常培
+ * @LastEditTime: 2021-08-27 18:38:40
+-->
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="wrap">
+    <!-- <p v-for="item in msg2" :key="item.a">{{ item.a }}</p> -->
+    <!-- <button @click="aaa">11</button> -->
+    <!-- <GoView /> -->
+    <SurveyTest />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SurveyTest from './components/SurveyTest'
+import CodeDiff from "./CodeDiff";
+import GoView from "./components/GoView/index.vue";
+import aaa from '../babel-plugin/index.js'
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    CodeDiff,
+    GoView,
+    SurveyTest,
+  },
+  data() {
+    return {
+      // msg2: GConst.msg2,
+    };
+  },
+  methods: {
+    aaa() {
+      // console.log(aaa);
+    },
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

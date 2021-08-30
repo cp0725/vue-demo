@@ -2,7 +2,7 @@
  * @Author: 常培
  * @Date: 2021-08-11 19:18:44
  * @LastEditors: 常培
- * @LastEditTime: 2021-08-16 16:05:00
+ * @LastEditTime: 2021-08-16 16:30:55
 -->
 <template>
   <div>
@@ -11,7 +11,7 @@
       <textarea v-model="newStr" cols="50" rows="10"></textarea>
     </div>
     <button @click="aa">aaa</button>
-    <div>
+    <div class="1111">
       <CodeDiff
         :jsonSourceLeft="oldStr"
         :jsonSourceRight="newStr"
